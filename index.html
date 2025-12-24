@@ -48,7 +48,15 @@
         },
         "mainEntity": {
           "@id": "https://markhopking.co.uk/#mark-richard-hopking"
-        }
+        },
+        "hasPart": [
+          { "@id": "https://heraldry.markhopking.co.uk/#full-arms" },
+          { "@id": "https://heraldry.markhopking.co.uk/#hopkin-arms" },
+          { "@id": "https://heraldry.markhopking.co.uk/#walsham-arms" },
+          { "@id": "https://heraldry.markhopking.co.uk/#scarlett-arms" },
+          { "@id": "https://heraldry.markhopking.co.uk/#fortin-arms" },
+          { "@id": "https://heraldry.markhopking.co.uk/#chivers-arms" }
+        ]
       },
       {
         "@type": "VisualArtwork",
@@ -64,6 +72,41 @@
         "about": {
           "@id": "https://markhopking.co.uk/#mark-richard-hopking"
         }
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://heraldry.markhopking.co.uk/#hopkin-arms",
+        "name": "Arms traditionally attributed to the surname Hopkin",
+        "artform": "Heraldry",
+        "image": "https://heraldry.markhopking.co.uk/Hopkin.png"
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://heraldry.markhopking.co.uk/#walsham-arms",
+        "name": "Arms of Sir John Walsham, 2nd Baronet of Knill Court",
+        "artform": "Heraldry",
+        "image": "https://heraldry.markhopking.co.uk/80%20Walsham-2nd%20Baronet%20of%20Knill%20Court.jpg"
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://heraldry.markhopking.co.uk/#scarlett-arms",
+        "name": "Arms of James Scarlett, 1st Baron Abinger",
+        "artform": "Heraldry",
+        "image": "https://heraldry.markhopking.co.uk/79%20Scarlett%201st%20Baron%20Abinger.png"
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://heraldry.markhopking.co.uk/#fortin-arms",
+        "name": "Arms attributed to Fortin in continental armorial sources",
+        "artform": "Heraldry",
+        "image": "https://heraldry.markhopking.co.uk/Fortin.png"
+      },
+      {
+        "@type": "VisualArtwork",
+        "@id": "https://heraldry.markhopking.co.uk/#chivers-arms",
+        "name": "Arms attributed to Chivers in British armorial sources",
+        "artform": "Heraldry",
+        "image": "https://heraldry.markhopking.co.uk/Chivers.png"
       }
     ]
   }
@@ -120,9 +163,59 @@
       margin: 1.5rem 0;
     }
     .arms-image img {
-      max-width: 260px;
+      width: 100%;
+      max-width: 280px;
       height: auto;
     }
+
+    /* Armorial source image styling */
+    .armorial-source {
+      text-align: center;
+      margin: 1rem 0 1.25rem 0;
+    }
+    .armorial-source img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 0.5rem;
+    }
+    .armorial-source figcaption {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 0.4rem;
+    }
+
+    /* Image index at bottom */
+    #image-index {
+      margin-top: 2.5rem;
+    }
+    .image-index-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .image-index-grid figure {
+      margin: 0;
+      text-align: center;
+      max-width: 160px;
+    }
+    .image-index-grid img {
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 0.4rem;
+    }
+    .image-index-grid figcaption {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+
     footer {
       font-size: 0.85rem;
       color: #555;
@@ -144,6 +237,7 @@
       <figure>
         <!-- Full achievement of arms -->
         <img src="Full_Arms.png"
+             loading="lazy"
              alt="The full heraldic achievement of Mark Richard Hopking, including shield, helm, mantling, crest, and motto.">
       </figure>
     </section>
@@ -200,6 +294,14 @@
       <h2>The Source Armorial Traditions</h2>
 
       <h3>Hopking / Hopkin(s)</h3>
+      <figure class="armorial-source">
+        <img src="Hopkin.png"
+             loading="lazy"
+             alt="Arms traditionally attributed to the surname Hopkin">
+        <figcaption>
+          Arms traditionally attributed to the surname Hopkin; used here as a structural armorial reference, not as inherited arms.
+        </figcaption>
+      </figure>
       <p>
         There is no established tradition of Hopking arms in Scotland. In England, the surname appears in several variant forms&mdash;Hopkin, Hopkins, Hopkyn, Hopkyng&mdash;often co-located in early modern records, particularly in Northamptonshire.
       </p>
@@ -217,6 +319,14 @@
       </p>
 
       <h3>Walsham</h3>
+      <figure class="armorial-source">
+        <img src="80 Walsham-2nd Baronet of Knill Court.jpg"
+             loading="lazy"
+             alt="Arms of Sir John Walsham, 2nd Baronet of Knill Court">
+        <figcaption>
+          Arms of Sir John Walsham, 2nd Baronet of Knill Court; source of the crosses pat&eacute;e fitch&eacute;e incorporated into the Scottish grant.
+        </figcaption>
+      </figure>
       <p>
         The Walsham family forms a fully documented ancestral line, including the creation of a baronetcy in 1831. The arms borne by Sir John Walsham, 1st and 2nd Baronets, are well attested. In simplified form, they include:
       </p>
@@ -228,6 +338,14 @@
       </p>
 
       <h3>Scarlett</h3>
+      <figure class="armorial-source">
+        <img src="79 Scarlett 1st Baron Abinger.png"
+             loading="lazy"
+             alt="Arms of James Scarlett, 1st Baron Abinger">
+        <figcaption>
+          Arms of James Scarlett, 1st Baron Abinger; source of the lion rampant Ermine used as the principal charge of the chief.
+        </figcaption>
+      </figure>
       <p>
         The Scarlett arms are among the most securely evidenced influences. The arms of James Scarlett, 1st Baron Abinger, are recorded as:
       </p>
@@ -242,6 +360,14 @@
       </p>
 
       <h3>Fortin</h3>
+      <figure class="armorial-source">
+        <img src="Fortin.png"
+             loading="lazy"
+             alt="Arms attributed to Fortin in continental armorial sources">
+        <figcaption>
+          Arms attributed to Fortin in continental armorial sources; referenced here for tincture only, without genealogical claim.
+        </figcaption>
+      </figure>
       <p>
         The surname Fortin appears in continental armorial sources, notably in Reitstap&rsquo;s <em>Armorial G&eacute;n&eacute;ral</em>, where arms are recorded as:
       </p>
@@ -253,6 +379,14 @@
       </p>
 
       <h3>Chivers</h3>
+      <figure class="armorial-source">
+        <img src="Chivers.png"
+             loading="lazy"
+             alt="Arms attributed to Chivers in British armorial sources">
+        <figcaption>
+          Arms attributed to Chivers in British armorial sources; influence confined to colour language rather than charge.
+        </figcaption>
+      </figure>
       <p>
         The Chivers arms are unusual but well documented in heraldic literature, notably as:
       </p>
@@ -330,6 +464,39 @@
         A full discussion of the genealogical evidence underlying the family lines referenced here is provided separately at
         <a href="https://genealogy.markhopking.co.uk/">genealogy.markhopking.co.uk</a>.
       </p>
+    </section>
+
+    <section id="image-index">
+      <h2>Image Index</h2>
+      <p>
+        The following images are used on this page to illustrate the Scottish arms and the principal armorial traditions that informed their design.
+      </p>
+      <div class="image-index-grid">
+        <figure>
+          <img src="Full_Arms.png" loading="lazy" alt="Full arms of Mark Richard Hopking">
+          <figcaption>Full achievement of the arms of Mark Richard Hopking.</figcaption>
+        </figure>
+        <figure>
+          <img src="Hopkin.png" loading="lazy" alt="Arms traditionally attributed to Hopkin">
+          <figcaption>Hopkin arms &mdash; structural reference for the shield.</figcaption>
+        </figure>
+        <figure>
+          <img src="80 Walsham-2nd Baronet of Knill Court.jpg" loading="lazy" alt="Walsham arms">
+          <figcaption>Walsham arms &mdash; source of the crosses pat&eacute;e fitch&eacute;e.</figcaption>
+        </figure>
+        <figure>
+          <img src="79 Scarlett 1st Baron Abinger.png" loading="lazy" alt="Scarlett arms">
+          <figcaption>Scarlett arms &mdash; source of the lion rampant Ermine.</figcaption>
+        </figure>
+        <figure>
+          <img src="Fortin.png" loading="lazy" alt="Fortin arms">
+          <figcaption>Fortin arms &mdash; reference for use of Azure.</figcaption>
+        </figure>
+        <figure>
+          <img src="Chivers.png" loading="lazy" alt="Chivers arms">
+          <figcaption>Chivers arms &mdash; additional Azure colour influence.</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
