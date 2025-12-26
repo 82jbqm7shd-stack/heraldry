@@ -238,12 +238,24 @@ sup a:focus {
       margin-top: 0.3rem;
     }
 
-    footer {
-      font-size: 0.85rem;
-      color: #555;
-      border-top: 1px solid #ddd;
-      margin-top: 2rem;
-    }
+   /* Standard site footer */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #1a4b8c;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -683,18 +695,20 @@ sup a:focus {
     </section>
   </main>
 
-  <footer>
-    <p>
-      &copy; <span id="year"></span> Mark Richard Hopking. All rights reserved.
-    </p>
-    <p>
-      This page presents a research-based account of the heraldry of Mark Richard Hopking and the origins of his Scottish grant of arms.
-    </p>
-  </footer>
+<footer class="site-footer">
+  <p>
+    © <span id="copyright-year"></span>
+    <a href="https://markhopking.co.uk/">markhopking.co.uk</a>.
+    All rights reserved.
+  </p>
+  <p>
+    Content is presented in a neutral, third-party style with citations distinguishing
+    published sources from privately held records.
+  </p>
+</footer>
 
-  <script>
-    // Simple year updater for the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("copyright-year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
