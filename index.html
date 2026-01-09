@@ -1,235 +1,727 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Heraldry of Mark Richard Hopking</title>
-  <meta name="description" content="A research-led account of the arms granted to Mark Richard Hopking by the Court of the Lord Lyon in 2018, examining the documented armorial traditions that informed the design." />
 
-  <!-- Canonical -->
+  <meta name="description" content="A research-led account of the arms granted to Mark Richard Hopking by the Court of the Lord Lyon in 2018, examining the documented armorial traditions that informed the design." />
   <link rel="canonical" href="https://heraldry.markhopking.co.uk/" />
+  <link rel="icon" type="image/png" href="Hopking-Favicon.png">
+  <link rel="shortcut icon" type="image/png" href="Hopking-Favicon.png">
+  <link rel="apple-touch-icon" href="Hopking-Favicon.png">
+
+  <!-- Social cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Heraldry of Mark Richard Hopking" />
+  <meta property="og:description" content="Scottish grant of arms from the Court of the Lord Lyon, 2018" />
+  <meta property="og:url" content="https://heraldry.markhopking.co.uk/" />
+  <meta property="og:image" content="https://heraldry.markhopking.co.uk/Full_Arms.png" />
+
+  <!-- Google Fonts: Elegant serif for headers, clean sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
 
   <style>
-    :root { --maxw: 980px; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.65;
+    :root {
+      /* Maritime & Traditional Color Palette */
+      --navy: #1a4b8c;
+      --navy-dark: #14396b;
+      --burgundy: #8b2635;
+      --gold: #d4a574;
+      --gold-light: #e6c9a0;
+      --charcoal: #4a4a4a;
+      --warm-gray: #6b6b6b;
+      --cream: #f5f2ed;
+      --white: #ffffff;
+      --border-light: #e5e3de;
+      
+      /* Typography */
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Source Serif 4', Georgia, serif;
+      --font-ui: system-ui, -apple-system, sans-serif;
+      
+      color-scheme: light;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      color: #111;
-      background: #fafafa;
-    }
-    header, main, footer {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-    header { padding-top: 2rem; }
-    h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
-    h1 { font-size: 2rem; margin: 0 0 0.5rem 0; }
-    h2 { font-size: 1.45rem; margin: 2rem 0 0.75rem 0; }
-    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem 0; }
-    h4 { font-size: 1rem; margin: 1.25rem 0 0.25rem 0; }
-    p { margin: 0.75rem 0; }
-    a { color: #1a4b8c; text-decoration: none; }
-    a:hover, a:focus { text-decoration: underline; }
-
-    nav.site-nav {
-      font-size: 0.95rem;
-      margin: 0.75rem 0 1.25rem 0;
-      padding: 0.75rem 0;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
-    }
-    nav.site-nav a { margin-right: 0.8rem; white-space: nowrap; }
-
-    .lead { font-size: 1.05rem; margin-top: 0.25rem; }
-    .meta { font-size: 0.95rem; color: #444; }
-
-    .methodology-note {
-      font-size: 0.95rem;
-      color: #333;
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      padding: 0.9rem 1rem;
-      border-radius: 10px;
-      margin-top: 1rem;
+      box-sizing: border-box;
     }
 
-    .note {
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      border-left: 5px solid #1a4b8c;
-      padding: 0.9rem 1rem;
-      border-radius: 10px;
-      margin: 1rem 0;
-      font-style: italic;
-      color: #222;
+    body {
+      font-family: var(--font-body);
+      line-height: 1.6;
+      color: var(--charcoal);
+      background: var(--cream);
     }
 
-    .hero-image {
-      margin: 1.5rem 0;
-      text-align: center;
-    }
-
-    .hero-image img {
-      max-width: 450px;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+    /* ==================== NAVIGATION ==================== */
+    
+    .site-nav {
+      background: var(--navy);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .image-figure {
-      margin: 1.5rem 0;
-      text-align: center;
-    }
-
-    .image-figure img {
-      max-width: 320px;
-      width: 100%;
-      height: auto;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-    }
-
-    .image-figure figcaption {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 0.5rem;
-      font-style: italic;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Crest comparison - side by side on larger screens */
-    .crest-comparison {
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      margin: 1.5rem 0;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 70px;
     }
 
-    .crest-comparison figure {
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      color: var(--white);
+      transition: opacity 0.2s;
+    }
+
+    .nav-brand:hover {
+      opacity: 0.9;
+    }
+
+    .nav-arms {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+      filter: brightness(1.1);
+    }
+
+    .nav-brand-text h1 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.2;
       margin: 0;
-      text-align: center;
-      flex: 0 1 auto;
     }
 
-    .crest-comparison img {
-      max-width: 220px;
+    .nav-brand-text .subtitle {
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      opacity: 0.85;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
       width: 100%;
-      height: auto;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
     }
 
-    .crest-comparison figcaption {
-      font-size: 0.85rem;
-      color: #555;
-      margin-top: 0.5rem;
-      font-style: italic;
-      max-width: 220px;
+    /* Mobile menu toggle */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 8px;
     }
 
-    /* Image index thumbnails */
-    #image-index {
-      margin-top: 2.5rem;
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--navy-dark);
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a::after {
+        display: none;
+      }
     }
 
-    .thumbnail-grid {
+    /* ==================== HERO SECTION ==================== */
+    
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+      color: var(--white);
+      padding: 48px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(212, 165, 116, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(139, 38, 53, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+      align-items: center;
     }
 
-    .thumbnail-item {
+    .hero-content h2 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+      opacity: 0.95;
+      font-weight: 500;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+
+    .hero-image {
       text-align: center;
     }
 
-    .thumbnail-item img {
-      max-width: 140px;
+    .hero-arms {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 12px;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      background: var(--white);
+      padding: 16px;
+    }
+
+    .hero-arms:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 968px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+      }
+
+      .hero-content h2 {
+        font-size: 2rem;
+      }
+
+      .hero-description {
+        margin: 0 auto;
+      }
+    }
+
+    /* ==================== MAIN CONTENT ==================== */
+    
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .section-header p {
+      color: var(--warm-gray);
+      font-size: 1.1rem;
+    }
+
+    /* ==================== METHODOLOGY NOTE ==================== */
+    
+    .methodology-note {
+      background: var(--white);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 48px;
+      font-size: 1rem;
+      color: var(--charcoal);
+      font-style: italic;
+    }
+
+    /* ==================== ARMORIAL TRADITION CARDS ==================== */
+    
+    .tradition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-bottom: 64px;
+    }
+
+    .tradition-card {
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 32px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tradition-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 0;
+      background: var(--gold);
+      transition: height 0.3s ease;
+    }
+
+    .tradition-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border-color: var(--gold);
+    }
+
+    .tradition-card:hover::before {
+      height: 100%;
+    }
+
+    .tradition-image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .tradition-image img {
+      max-width: 120px;
+      height: auto;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 8px;
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: var(--burgundy);
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--warm-gray);
+    }
+
+    /* ==================== CONTENT SECTIONS ==================== */
+    
+    .content-section {
+      margin-bottom: 48px;
+    }
+
+    .content-section h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .content-section h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin: 32px 0 16px;
+      font-weight: 600;
+    }
+
+    .content-section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--charcoal);
+      margin-bottom: 16px;
+    }
+
+    .blazon {
+      font-style: italic;
+      color: var(--navy);
+      margin: 16px 0;
+      padding-left: 32px;
+      font-size: 1.05rem;
+    }
+
+    /* ==================== CREST COMPARISON ==================== */
+    
+    .crest-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin: 48px 0;
+      padding: 48px;
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+    }
+
+    .crest-box {
+      text-align: center;
+    }
+
+    .crest-label {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .crest-box img {
+      max-width: 200px;
       width: 100%;
       height: auto;
-      border: 1px solid #e0e0e0;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      margin-bottom: 16px;
+      background: var(--white);
+      padding: 12px;
+    }
+
+    .crest-caption {
+      font-size: 0.95rem;
+      color: var(--warm-gray);
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .crest-comparison {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* ==================== NOTE BOXES ==================== */
+    
+    .note-box {
+      background: #fffbf0;
+      border-left: 4px solid var(--gold);
+      padding: 24px;
+      margin: 24px 0;
       border-radius: 6px;
-      background: #fff;
-      padding: 0.25rem;
-      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .thumbnail-item img:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    .note-box p {
+      margin: 0;
+      font-size: 1rem;
     }
 
-    .thumbnail-item figcaption {
-      font-size: 0.75rem;
-      color: #666;
-      margin-top: 0.4rem;
-      line-height: 1.3;
+    /* ==================== INFO BOX ==================== */
+    
+    .info-section {
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 48px;
+      margin-bottom: 64px;
     }
 
-    /* Citations */
-    sup a {
-      text-decoration: none;
-      color: #1a4b8c;
-    }
-    sup a:hover, sup a:focus {
-      text-decoration: underline;
-      color: #000;
-    }
-
-    .refs {
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 1rem 1rem;
-      margin-top: 2rem;
-    }
-    .refs h2 { margin-top: 0; }
-    .refs ol { margin: 0.75rem 0 0 1.25rem; }
-    .refs li { margin: 0.45rem 0; overflow-wrap: anywhere; }
-
-    /* Standard site footer */
-    .site-footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #ddd;
-      font-size: 0.85rem;
-      color: #555;
+    .info-section h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 32px;
+      font-weight: 600;
       text-align: center;
     }
 
-    .site-footer a {
-      color: #1a4b8c;
-      text-decoration: none;
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 48px;
     }
 
-    .site-footer a:hover {
-      text-decoration: underline;
+    .info-details {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 16px 24px;
+      font-size: 0.95rem;
+    }
+
+    .info-details dt {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .info-details dd {
+      color: var(--charcoal);
+    }
+
+    @media (max-width: 968px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .info-details {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .info-details dt {
+        margin-top: 16px;
+      }
+
+      .info-details dt:first-child {
+        margin-top: 0;
+      }
+    }
+
+    /* ==================== REFERENCES ==================== */
+    
+    .references {
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 48px;
+      margin-top: 64px;
+    }
+
+    .references h2 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      color: var(--navy);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .references ol {
+      padding-left: 32px;
+      counter-reset: reference-counter;
+    }
+
+    .references li {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: var(--charcoal);
+    }
+
+    .references a {
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .references a:hover {
+      border-bottom-color: var(--navy);
+    }
+
+    /* ==================== FOOTER ==================== */
+    
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 48px 24px 24px;
+      margin-top: 64px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-section h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      transition: color 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .footer-bottom p {
+      margin: 8px 0;
+    }
+
+    /* ==================== ANIMATIONS ==================== */
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tradition-card,
+    .content-section,
+    .crest-comparison {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* ==================== PRINT STYLES ==================== */
+    
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+
+      .site-nav,
+      .nav-toggle,
+      footer {
+        display: none;
+      }
+
+      .hero {
+        background: none;
+        color: black;
+        border-bottom: 2px solid black;
+      }
+
+      .tradition-card,
+      .info-section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .tradition-card {
+        border: 1px solid black;
+      }
+
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+
+      h1, h2, h3 {
+        color: black;
+      }
     }
   </style>
 
-  <!-- JSON-LD structured data -->
+  <!-- Schema.org structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://heraldry.markhopking.co.uk/#website",
-        "url": "https://heraldry.markhopking.co.uk/",
-        "name": "Heraldry of Mark Richard Hopking",
-        "inLanguage": "en-GB",
-        "publisher": {
-          "@type": "Person",
-          "@id": "https://markhopking.co.uk/#person"
-        }
-      },
       {
         "@type": "WebPage",
         "@id": "https://heraldry.markhopking.co.uk/#webpage",
@@ -237,22 +729,7 @@
         "name": "Heraldry of Mark Richard Hopking",
         "description": "A research-led account of the arms granted to Mark Richard Hopking by the Court of the Lord Lyon in 2018",
         "inLanguage": "en-GB",
-        "isPartOf": { "@id": "https://heraldry.markhopking.co.uk/#website" },
-        "about": { "@id": "https://heraldry.markhopking.co.uk/#arms" },
-        "mainEntity": { "@id": "https://heraldry.markhopking.co.uk/#article" }
-      },
-      {
-        "@type": "Article",
-        "@id": "https://heraldry.markhopking.co.uk/#article",
-        "headline": "Heraldry of Mark Richard Hopking",
-        "inLanguage": "en-GB",
-        "about": { "@id": "https://heraldry.markhopking.co.uk/#arms" },
-        "mentions": [
-          { "@id": "https://markhopking.co.uk/#person" },
-          { "@id": "https://barony.markhopking.co.uk/#barony" }
-        ],
-        "isPartOf": { "@id": "https://heraldry.markhopking.co.uk/#webpage" },
-        "publisher": { "@id": "https://markhopking.co.uk/#person" }
+        "isPartOf": { "@id": "https://markhopking.co.uk/#website" }
       },
       {
         "@type": "CreativeWork",
@@ -276,577 +753,388 @@
 </head>
 
 <body>
-
-  <nav class="site-nav" aria-label="Site navigation">
-    <a href="https://markhopking.co.uk/">← Mark Hopking (Home)</a> ·
-    <a href="https://barony.markhopking.co.uk/">Barony of Balvill</a> ·
-    <a href="https://marine.markhopking.co.uk/">Maritime</a> ·
-    <a href="https://heraldry.markhopking.co.uk/">Heraldry</a> ·
-    <a href="https://genealogy.markhopking.co.uk/">Genealogy</a>
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="https://markhopking.co.uk/" class="nav-brand">
+        <img src="Mark_Hopking.png" alt="Arms of Mark Hopking" class="nav-arms" />
+        <div class="nav-brand-text">
+          <h1>Mark Hopking</h1>
+          <span class="subtitle">MARINER • BARON • ARMIGER</span>
+        </div>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+        ☰
+      </button>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="https://marine.markhopking.co.uk/">Maritime</a>
+        <a href="https://barony.markhopking.co.uk/">Barony</a>
+        <a href="https://heraldry.markhopking.co.uk/">Heraldry</a>
+        <a href="https://genealogy.markhopking.co.uk/">Genealogy</a>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <h1>Heraldry of Mark Richard Hopking</h1>
-    
-    <p class="lead">
-      A research-led account of the arms granted to Mark Richard Hopking by the Court of the Lord Lyon in 2018.
-    </p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h2>Heraldry of Mark Richard Hopking</h2>
+        <p class="hero-subtitle">Scottish Grant of Arms, 2018</p>
+        <p class="hero-description">
+          A research-led account of the arms granted by the Court of the Lord Lyon, examining the documented 
+          armorial traditions that informed the design. Recorded on page 90 of volume 93 of the Public Register 
+          of All Arms and Bearings in Scotland.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="Full_Arms.png" alt="Full heraldic achievement of Mark Richard Hopking" class="hero-arms" />
+      </div>
+    </div>
+  </header>
 
+  <!-- Main Content -->
+  <main>
+    <!-- Methodology Note -->
     <div class="methodology-note">
       This page examines the documented armorial traditions that informed the design of the Scottish grant,
       distinguishing between established evidence of descent, surname association, and structural references.
       Where descent is unproven, this is stated explicitly.
     </div>
-  </header>
 
-  <main>
+    <!-- Armorial Traditions -->
+    <section>
+      <div class="section-header">
+        <h2>Five Armorial Traditions</h2>
+        <p>The ancestral and structural sources that informed the design</p>
+      </div>
 
-    <div class="hero-image">
-      <img src="Full_Arms.png" alt="The full heraldic achievement of Mark Richard Hopking, including shield, helm, mantling, crest, and motto" />
-    </div>
+      <div class="tradition-grid">
+        <div class="tradition-card">
+          <div class="tradition-image">
+            <img src="Hopkin.jpg" alt="Hopkin arms" />
+          </div>
+          <h3 class="card-title">Hopking / Hopkin</h3>
+          <p class="card-subtitle">Structural Foundation</p>
+          <p class="card-description">
+            <em>Sable, on a chevron Or, between three ancient pistols, three roses Gules.</em>
+            Provided the structural foundation—field, chevron, pistols, and roses retained as principal elements. 
+            Used explicitly as <strong>surname association</strong>, not inheritance.
+          </p>
+        </div>
 
-    <section id="origin">
-      <h2>The Origin of a Modern Scottish Grant of Arms</h2>
+        <div class="tradition-card">
+          <div class="tradition-image">
+            <img src="80 Walsham 2nd Baronet of Knill Court.jpg" alt="Walsham arms" />
+          </div>
+          <h3 class="card-title">Walsham</h3>
+          <p class="card-subtitle">Documented Ancestral Line</p>
+          <p class="card-description">
+            <em>Sable, on a cross voided Or, five crosses patée fitchée of the last.</em>
+            Fully documented armigerous line. The <strong>crosses patée fitchée</strong> adopted as the principal 
+            Walsham reference, placed in the chief flanking the central charge.
+          </p>
+        </div>
+
+        <div class="tradition-card">
+          <div class="tradition-image">
+            <img src="79 Scarlett 1st Baron Abinger.png" alt="Scarlett arms" />
+          </div>
+          <h3 class="card-title">Scarlett</h3>
+          <p class="card-subtitle">Documented Ancestral Line</p>
+          <p class="card-description">
+            <em>Chequy Or and Gules, a lion rampant Ermine; on a canton Azure a castle triple-towered Argent.</em>
+            Senior armigerous line with continuous heraldic tradition. The <strong>lion rampant Ermine</strong> 
+            adopted as the central charge in the chief.
+          </p>
+        </div>
+
+        <div class="tradition-card">
+          <div class="tradition-image">
+            <img src="Fortin.png" alt="Fortin arms" />
+          </div>
+          <h3 class="card-title">Fortin</h3>
+          <p class="card-subtitle">Colour Reference</p>
+          <p class="card-description">
+            <em>Azure, a horse forcené Argent, crined, unguled and membered Or.</em>
+            Attested arms with no demonstrated genealogical connection. Azure adopted as secondary tincture, 
+            used in the chief to reference Fortin armorial colour usage.
+          </p>
+        </div>
+
+        <div class="tradition-card">
+          <div class="tradition-image">
+            <img src="Chivers.png" alt="Chivers arms" />
+          </div>
+          <h3 class="card-title">Chivers</h3>
+          <p class="card-subtitle">Colour Reference</p>
+          <p class="card-description">
+            Attested arms with no demonstrated genealogical connection. Azure serves as a secondary tincture, 
+            informed by both Fortin and Chivers armorial colour usage in the design of the chief.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Shield -->
+    <section class="content-section">
+      <h2>The Shield</h2>
       
       <p>
-        The arms granted to Mark Richard Hopking by the Court of the Lord Lyon in 2018 are a modern Scottish creation,
-        lawfully constituted and recorded on page 90 of volume 93 of the <em>Public Register of All Arms and Bearings in Scotland</em>.<sup><a href="#ref-1">[1]</a></sup><sup><a href="#ref-2">[2]</a></sup>
-        They do not purport to be inherited arms, nor do they assert continuity of armorial right across surnames.
-        Rather, they represent a considered synthesis of documented armorial traditions associated with several ancestral
-        family lines, together with long-standing family usage, refined and regularised under Scottish heraldic law.
+        The shield of Mark Richard Hopking bears the blazon:
+      </p>
+
+      <p class="blazon">
+        Sable, on a chevron Or, between three ancient pistols of the last, three roses Gules; on a chief Azure 
+        in the lower part thereof a fillet Argent, between two crosses patée fitchée Or, a lion rampant Ermine.
       </p>
 
       <p>
-        This page examines how the final blazon came about, the sources that informed it, and the distinction between
-        established evidence and conjecture.
+        This composition integrates five distinct armorial sources into a cohesive Scottish design. The field Sable 
+        and chevron Or with pistols and roses derive from the Hopkin structural tradition. The chief Azure contains 
+        the Walsham crosses patée fitchée and the Scarlett lion rampant Ermine, with the fillet Argent introduced 
+        by the Lord Lyon to separate Azure from Sable in compliance with the Laws of Arms.
+      </p>
+
+      <p>
+        The shared use of Sable in both Walsham and Hopkin arms facilitated their integration. Azure as a secondary 
+        tincture draws from Fortin and Chivers armorial colour usage, creating a harmonious composition that respects 
+        both Scottish heraldic law and the ancestral traditions it references.
       </p>
     </section>
 
-    <section id="scottish-context">
-      <h2>Scottish Heraldic Context</h2>
+    <!-- The Crest Story -->
+    <section class="content-section">
+      <h2>The Crest: From Family Tradition to Formal Grant</h2>
       
       <p>
-        In Scotland, heraldry is regulated by statute and administered by the Court of the Lord Lyon. Arms are individual,
-        heritable property and may be borne only by those to whom they have been granted or matriculated. No right to arms
-        arises merely from surname, descent, or custom.
+        The crest represents perhaps the most compelling narrative element of the achievement—a traditional family 
+        emblem used for generations, formally regularised through the Scottish grant.
       </p>
-
-      <p>
-        Accordingly, the arms discussed here exist <strong>because they were granted</strong>, not because of ancestry.
-        Historical arms associated with surnames or families may inform the design of a new grant, but they do not in
-        themselves confer armorial right.
-      </p>
-
-      <p>
-        The Court of the Lord Lyon determines the legality and form of arms; symbolic interpretation lies outside its
-        judicial function.
-      </p>
-    </section>
-
-    <section id="methodology">
-      <h2>Methodology and Sources</h2>
-      
-      <p>
-        The design of the Hopking arms was informed by armorial precedents associated with five surnames appearing in
-        the petitioner's ancestry:
-      </p>
-
-      <ul>
-        <li><strong>Hopking / Hopkin(s)</strong></li>
-        <li><strong>Walsham</strong></li>
-        <li><strong>Scarlett</strong></li>
-        <li><strong>Fortin</strong></li>
-        <li><strong>Chivers</strong></li>
-      </ul>
-
-      <p>
-        These sources fall into three evidential categories:
-      </p>
-
-      <ol>
-        <li><strong>Documented ancestral armigers</strong> (Walsham, Scarlett)</li>
-        <li><strong>Surname-associated arms with no proven descent</strong> (Hopking / Hopkin(s))</li>
-        <li><strong>Attested arms with no demonstrated genealogical connection</strong> (Fortin, Chivers)</li>
-      </ol>
-
-      <p>
-        Where descent is unproven, this is stated explicitly. No claim of inherited armorial right is made in such cases.
-      </p>
-    </section>
-
-    <section id="source-traditions">
-      <h2>The Source Armorial Traditions</h2>
-
-      <h3 id="hopking">Hopking / Hopkin(s)</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="Hopkin.jpg" alt="Arms traditionally attributed to the surname Hopkin" />
-          <figcaption>
-            Arms traditionally attributed to the surname Hopkin; used here as a structural armorial reference,
-            not as inherited arms.
-          </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        <strong>There is no established tradition of arms borne under the surname Hopking in Scotland.</strong>
-      </p>
-
-      <p>
-        In England, however, the surname appears historically in several variant forms—<em>Hopkin</em>, <em>Hopkins</em>,
-        <em>Hopkyn</em>, and <em>Hopkyng</em>—which are frequently co-located in early modern records, particularly in
-        Northamptonshire. These spellings reflect orthographic variation in historical record-keeping rather than distinct
-        surnames in the modern sense.
-      </p>
-
-      <p>
-        The armorial material discussed below relates to the surname <em>Hopkin</em> as it appears in English armorial sources.
-        It is presented for contextual and comparative purposes only and does not imply the existence of inherited, historically
-        borne, or genealogically transmissible arms for the modern surname <em>Hopking</em>.
-      </p>
-
-      <p>
-        A blazon frequently associated with the surname is:
-      </p>
-
-      <p style="margin-left: 2rem; font-style: italic;">
-        Sable, on a chevron Or, between three ancient pistols, three roses Gules.
-      </p>
-
-      <p>
-        While no genealogical descent from an English armiger bearing these arms has been demonstrated, this blazon provided
-        the <strong>structural foundation</strong> for the Scottish grant. The field, chevron, pistols, and roses were retained
-        as the principal elements of the shield.
-      </p>
-
-      <p>
-        This use is explicitly one of <strong>surname association</strong>, not inheritance.
-      </p>
-
-      <h3 id="walsham">Walsham</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="80 Walsham 2nd Baronet of Knill Court.jpg" alt="Ancient Walsham arms, as borne within the composite arms of the Walsham baronets" />
-          <figcaption>
-            Simplified representation of the ancient Walsham arms. In the arms borne by Sir John James Garbett Walsham,
-            1st Baronet, and Sir John Walsham, 2nd Baronet of Knill Court, the ancient Walsham arms occupy the upper-left
-            (dexter chief) position within a more complex composite achievement arranged in three rows of three.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-4">[4]</a></sup>
-            The simplified arms are shown here solely to illustrate the armorial source of the crosses patée fitchée
-            incorporated into the Scottish grant.
-          </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        The Walsham family constitutes a fully documented armigerous ancestral line. Documentary evidence establishes that
-        the arms borne by the 1st and 2nd Walsham Baronets were not quartered in the conventional heraldic sense, but formed
-        a composite arrangement of nine armorial bearings displayed in three rows of three.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-4">[4]</a></sup>
-      </p>
-
-      <p>
-        Within this composite achievement, the ancient Walsham arms occupied the first position. It is this ancient Walsham
-        element alone that is referenced on this page. No claim is made to the composite arms as a whole, nor to any broader
-        armorial inheritance beyond that expressly incorporated into the Scottish grant.
-      </p>
-
-      <p style="margin-left: 2rem; font-style: italic;">
-        Sable, on a cross voided Or, five crosses patée fitchée of the last.
-      </p>
-
-      <p>
-        This blazon represents the ancient Walsham arms only, as distinct from both the later composite arms borne by the
-        Walsham baronets and the subsequent quartered arms borne by later descendants, including Mark Hopking's great-grandfather.
-      </p>
-
-      <p>
-        In the Scottish grant, the <strong>crosses patée fitchée</strong> were adopted as the principal Walsham reference.
-        Rather than reproducing the English arms wholesale, two such crosses were placed in the chief, flanking the central charge.
-        The shared use of a black field in both Walsham and Hopkin arms further facilitated their integration within a coherent
-        Scottish design.
-      </p>
-
-      <p>
-        Together, these successive forms represent the historical development of a single Walsham armorial tradition. Only its
-        ancient form is referenced here as an armorial source; later composite and quartered expressions are noted solely as
-        genealogical and evidential context.
-      </p>
-
-      <h3 id="scarlett">Scarlett</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="79 Scarlett 1st Baron Abinger.png" alt="Arms of Sir James Scarlett, 1st Baron Abinger" />
-          <figcaption>
-            Arms of Sir James Scarlett, 1st Baron Abinger, illustrating the Scarlett armorial tradition in its peerage form.
-          </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        The Scarlett family represents a senior armigerous line with a well-documented and continuous heraldic tradition.
-        Across multiple branches and successive generations—including the Jamaican branch, the peerage of Baron Abinger,
-        and later complex quartered forms—the core Scarlett arms consistently feature a <strong>lion rampant Ermine</strong>.<sup><a href="#ref-5">[5]</a></sup><sup><a href="#ref-6">[6]</a></sup>
-      </p>
-
-      <p>
-        Although the Scarlett arms were subject over time to augmentation, quartering, and the addition of cantons, supporters,
-        and external ornaments, the lion rampant Ermine remained a stable and recognisable armorial element. Even in later
-        composite achievements, the Scarlett arms proper, bearing the lion rampant Ermine, customarily occupy the first position.
-      </p>
-
-      <p style="margin-left: 2rem; font-style: italic;">
-        Chequy Or and Gules, a lion rampant Ermine; on a canton Azure a castle triple-towered Argent.
-      </p>
-
-      <p>
-        This blazon represents the Scarlett arms proper, abstracted from later elaborations and quarterings. No claim is made
-        on this page to the peerage arms, supporters, coronets, or subsequent quartered achievements associated with later
-        members of the family.
-      </p>
-
-      <p>
-        In the Scottish grant of arms to Mark Hopking, the <strong>lion rampant Ermine</strong> was adopted as the sole Scarlett
-        reference. Its long-standing continuity across the Scarlett armorial tradition, and its ability to stand independently
-        as a heraldic charge without importing English peerage apparatus, made it particularly suited to incorporation within
-        a Scottish heraldic design.
-      </p>
-
-      <p>
-        The Scarlett arms are therefore treated here as a single, continuous armorial source, expressed historically in
-        increasingly elaborate forms, but unified by the persistent use of the lion rampant Ermine as their defining charge.
-      </p>
-
-      <div class="note">
-        <strong>Scarlett descent.</strong> The connection to the Scarlett family is through Florence Scarlett (born 20 March 1844),
-        daughter of Peter Campbell Scarlett CB, DL, who was the son of Sir James Scarlett, 1st Baron Abinger. Florence married
-        Sir John Walsham, 2nd Baronet, establishing the documented Walsham-Scarlett line through which descent is traced.
-      </div>
-
-      <h3 id="fortin">Fortin</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="Fortin.png" alt="Arms attributed to Fortin in continental armorial sources" />
-          <figcaption>
-            Arms attributed to Fortin in continental armorial sources; referenced here for tincture only,
-            without genealogical claim.
-          </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        The surname Fortin appears in continental armorial sources, notably in Reitstap's <em>Armorial Général</em>, where
-        arms are recorded as:
-      </p>
-
-      <p style="margin-left: 2rem; font-style: italic;">
-        D'Azure, à deux dragons d'Or.
-      </p>
-
-      <p>
-        No evidence has been established linking the petitioner genealogically to an armigerous Fortin family. Accordingly,
-        no claim is made to Fortin arms. Their influence is confined to the <strong>use of Azure</strong> as a tincture within
-        the Scottish design. The dragon charge was deliberately excluded.
-      </p>
-
-      <h3 id="chivers">Chivers</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="Chivers.png" alt="Arms attributed to Chivers in British armorial sources" />
-          <figcaption>
-            Arms attributed to Chivers in British armorial sources; influence confined to colour language rather than charge.
-          </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        The Chivers arms are unusual but well documented in heraldic literature, notably as:
-      </p>
-
-      <p style="margin-left: 2rem; font-style: italic;">
-        Argent, three cinquefoils Gules, and a giron Azure.
-      </p>
-
-      <p>
-        As with Fortin, no proven descent has been demonstrated. The Chivers influence is therefore limited to colour language
-        rather than charge. The <strong>Azure</strong> element was absorbed into the chief as part of a broader secondary
-        tincture scheme.
-      </p>
-    </section>
-
-    <section id="synthesis">
-      <h2>Synthesis of the Scottish Arms</h2>
-      
-      <p>
-        The final Scottish arms bring together these influences in a manner consistent with Scottish heraldic practice,
-        while remaining distinct and original.
-      </p>
-
-      <h3 id="shield">Shield</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="Shield.png" alt="The shield of the arms of Mark Richard Hopking as granted by the Court of the Lord Lyon" />
-          <figcaption>
-            The shield of the Scottish arms of Mark Richard Hopking, showing the field, chevron, charges, and chief as granted.
-          </figcaption>
-        </figure>
-      </div>
-
-      <p>
-        The shield retains the Hopkin structural blazon: a field <strong>Sable</strong>, a chevron <strong>Or</strong>,
-        three <strong>ancient pistols</strong>, and three <strong>roses Gules</strong>.
-      </p>
-
-      <p>
-        Upon this foundation, a <strong>chief Azure</strong> was introduced to carry the principal ancestral references:
-      </p>
-
-      <ul>
-        <li>A <strong>lion rampant Ermine</strong> (from Scarlett), centrally placed</li>
-        <li><strong>Two crosses patée fitchée Or</strong> (from Walsham), flanking the lion</li>
-      </ul>
-
-      <p>
-        Azure serves as a secondary tincture, informed by Fortin and Chivers armorial colour usage.
-      </p>
-
-      <h3 id="fillet">The Fillet Argent</h3>
-
-      <p>
-        In the arms as originally petitioned, the chief Azure lay directly upon the field Sable. Under Scottish heraldic law,
-        direct colour-on-colour adjacency between field and chief requires formal separation. At the stage of grant, the Lord
-        Lyon introduced a <strong>fillet Argent</strong> in the lower part of the chief, thereby separating Azure from Sable
-        and bringing the arms into full compliance with the Laws of Arms.
-      </p>
-
-      <p>
-        This was a <strong>technical heraldic refinement</strong>, not a symbolic addition, and it preserved the conceptual
-        integrity of the design. The initial warrant was issued without the fillet, but when preparing the grant for the Herald
-        Artist, the tincture rule violation was identified. A revised warrant incorporating the fillet Argent was issued at the
-        last moment to resolve this technical issue.
-      </p>
-    </section>
-
-    <section id="helm">
-      <h2>Helm</h2>
-      
-      <p>
-        In accordance with Scottish practice, the Letters Patent depict a helm befitting the petitioner's degree at the time
-        of grant in 2018, when he did not yet hold a Scottish feudal barony. At that time, the appropriate helm was that of
-        an Esquire.
-      </p>
-
-      <p>
-        Following the later acquisition of the Barony of Balvill in 2025, the armiger is thereafter entitled, by custom, to
-        depict a helm appropriate to that dignity in subsequent artistic renderings. The original grant remains unaltered, and
-        no inconsistency arises between the juridical record and later representational usage.
-      </p>
-    </section>
-
-    <section id="crest-motto">
-      <h2>Crest and Motto</h2>
-
-      <h3 id="crest">Crest</h3>
 
       <div class="crest-comparison">
-        <figure>
-          <img src="Old family crest.png" alt="Historic family crest as traditionally used prior to the Scottish grant of arms" />
-          <figcaption>
-            Crest as traditionally used within the family prior to the Scottish grant; source unknown.
-          </figcaption>
-        </figure>
+        <div class="crest-box">
+          <p class="crest-label">Traditional Family Crest</p>
+          <img src="Old family crest.png" alt="Historic family crest as traditionally used prior to the Scottish grant" />
+          <p class="crest-caption">
+            As traditionally used within the family for generations, notably on signet rings and personal items. 
+            Documentary evidence of use extends back five generations. Source unknown.
+          </p>
+        </div>
 
-        <figure>
-          <img src="Crest.png" alt="Crest of the arms of Mark Richard Hopking as granted by the Court of the Lord Lyon" />
-          <figcaption>
-            Crest as formally granted and depicted in the full Scottish achievement of arms.
-          </figcaption>
-        </figure>
+        <div class="crest-box">
+          <p class="crest-label">Granted Crest (2018)</p>
+          <img src="Crest.png" alt="Crest as formally granted by the Court of the Lord Lyon" />
+          <p class="crest-caption">
+            As formally granted and depicted in the full Scottish achievement of arms. The granted blazon represents 
+            a modernised and technically precise description of the crest as it had evolved in family usage.
+          </p>
+        </div>
       </div>
 
       <p>
-        The crest—<strong>a double-turreted tower in prospect Argent, masoned Sable, flammant on a rock Proper</strong>—has
-        been used within the family for generations, notably on signet rings and personal items. Documentary evidence of its
-        use extends back five generations.
+        The granted blazon—<strong>a double-turreted tower in prospect Argent, masoned Sable, flammant on a rock 
+        Proper</strong>—represents the crest as it had evolved in family usage by the time of the petition. No 
+        documentary source has been identified for its original adoption, and no claim is made to its antiquity or 
+        original grant.
       </p>
 
-      <p>
-        No documentary source has been identified for the crest's original adoption, and no claim is made to its antiquity or
-        original grant. Its resemblance to the castle badge associated with the Suffolk Regiment is acknowledged, but no
-        connection is asserted.
-      </p>
-
-      <p>
-        The crest is therefore presented as a <strong>traditional family emblem</strong>, formally regularised through the
-        Scottish grant. An early family document from the nineteenth century shows a slightly different blazon, described as
-        "A Flaming Fort" with the motto "Inter Primos" (Among the First) or "Coming the first / otherwise always in the front."
-        This historical variant was discovered only after the 2018 grant had been made.
-      </p>
-
-      <p>
-        The granted blazon represents a modernised and technically precise description of the crest as it had evolved in family
-        usage by the time of the petition.
-      </p>
-
-      <h3 id="motto">Motto</h3>
-
-      <div class="image-figure">
-        <figure>
-          <img src="Motto.png" alt="The motto TANTUM OPTIMUS EST as depicted in the Scottish grant of arms" />
-          <figcaption>
-            The motto <em>TANTUM OPTIMUS EST</em> as depicted in the Scottish grant of arms.
-          </figcaption>
-        </figure>
+      <div class="note-box">
+        <p>
+          An early family document from the nineteenth century, discovered only after the 2018 grant had been made, 
+          shows a slightly different blazon described as "A Flaming Fort" with the motto "Inter Primos" (Among the First). 
+          This historical variant provides intriguing context to the traditional family usage.
+        </p>
       </div>
 
+      <h3>The Motto</h3>
+      
       <p>
-        The motto <strong>TANTUM OPTIMUS EST</strong>, which translates as <strong>"Only the Best"</strong>, originated as a
-        personal family expression specific to Mark Hopking, reflecting a long-standing characteristic rather than a historical
-        motto inherited from armigerous ancestors. The phrase existed in English within the family and was Latinised for the
-        heraldic grant.
+        The motto <strong>TANTUM OPTIMUS EST</strong> ("Only the Best") originated as a personal family expression 
+        specific to Mark Hopking, reflecting a long-standing characteristic rather than a historical motto inherited 
+        from armigerous ancestors. The phrase existed in English within the family and was Latinised for the heraldic grant.
       </p>
 
       <p>
-        The historical motto "Inter Primos" (Among the First), discovered on the early family crest document after the 2018 grant
-        had been completed, represents an intriguing parallel. Both mottoes express themes of primacy and excellence, though they
-        were adopted independently and at different times.
-      </p>
-
-      <p>
-        The granted motto TANTUM OPTIMUS EST is therefore a modern, personal expression, distinct from any historical family motto,
-        though thematically consonant with the earlier "Inter Primos."
+        The historical motto "Inter Primos" represents an intriguing parallel—both mottoes express themes of primacy 
+        and excellence, though adopted independently and at different times.
       </p>
     </section>
 
-    <section id="as-granted">
+    <!-- The Helm -->
+    <section class="content-section">
+      <h3>The Helm</h3>
+      
+      <p>
+        In accordance with Scottish practice, the Letters Patent depict a helm befitting the petitioner's degree at 
+        the time of grant in 2018, when he did not yet hold a Scottish feudal barony. At that time, the appropriate 
+        helm was that of an Esquire.
+      </p>
+
+      <p>
+        Following the later acquisition of the Barony of Balvill in 2025, the armiger is thereafter entitled, by custom, 
+        to depict a helm appropriate to that dignity in subsequent artistic renderings. The original grant remains unaltered, 
+        and no inconsistency arises between the juridical record and later representational usage.
+      </p>
+    </section>
+
+    <!-- As Granted -->
+    <section class="content-section">
       <h2>The Arms as Granted</h2>
       
       <p>
-        The arms, crest, motto, and pennon exist as a single juridical creation of the Court of the Lord Lyon. While informed
-        by ancestry and tradition, their authority derives solely from the grant itself as recorded on page 90 of volume 93 of
-        the <em>Public Register of All Arms and Bearings in Scotland</em>.<sup><a href="#ref-1">[1]</a></sup>
+        The arms, crest, motto, and pennon exist as a single juridical creation of the Court of the Lord Lyon. While 
+        informed by ancestry and tradition, their authority derives solely from the grant itself as recorded on page 90 
+        of volume 93 of the <em>Public Register of All Arms and Bearings in Scotland</em>.
       </p>
 
       <p>
-        A full discussion of the genealogical evidence underlying the family lines referenced here is provided separately at
+        A full discussion of the genealogical evidence underlying the family lines referenced here is provided separately at 
         <a href="https://genealogy.markhopking.co.uk/">genealogy.markhopking.co.uk</a>.
       </p>
     </section>
 
-    <section id="references" class="refs" aria-labelledby="h-refs">
-      <h2 id="h-refs">References</h2>
-      
+    <!-- Info Box -->
+    <section class="info-section">
+      <h2>Grant Details</h2>
+      <div class="info-grid">
+        <div>
+          <dl class="info-details">
+            <dt>Granted to</dt>
+            <dd>Mark Richard Hopking</dd>
+            
+            <dt>Granted by</dt>
+            <dd>Court of the Lord Lyon</dd>
+            
+            <dt>Date of grant</dt>
+            <dd>2018</dd>
+            
+            <dt>Register</dt>
+            <dd>Page 90, Volume 93</dd>
+          </dl>
+        </div>
+        
+        <div>
+          <dl class="info-details">
+            <dt>Authority</dt>
+            <dd>Public Register of All Arms and Bearings in Scotland</dd>
+            
+            <dt>Jurisdiction</dt>
+            <dd>Scottish heraldic law</dd>
+            
+            <dt>Status</dt>
+            <dd>Individual, heritable property</dd>
+            
+            <dt>Helm updated</dt>
+            <dd>2025 (after acquiring Barony of Balvill)</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section class="references">
+      <h2>References</h2>
       <ol>
-        <li id="ref-1">
+        <li>
           Court of the Lord Lyon. <em>Public Register of All Arms and Bearings in Scotland</em>,
           Vol. 93. Edinburgh: Court of the Lord Lyon, p. 90.
         </li>
-        <li id="ref-2">
-          Lord Lyon Society. "Armorial".
-          Retrieved 8 January 2026.
+        <li>
+          Lord Lyon Society. "Armorial". Retrieved 8 January 2026.
           <a href="https://lordlyonsociety.org.uk/armorial/" target="_blank" rel="noopener noreferrer">https://lordlyonsociety.org.uk/armorial/</a>
         </li>
-        <li id="ref-3">
+        <li>
           <em>The Peerage, Baronetage and Knightage of the British Empire</em>,
           Part II. London, c.19th century, p. 676 (Walsham of Knill Court).
         </li>
-        <li id="ref-4">
+        <li>
           "Walsham baronets." <em>Wikipedia</em>.
           <a href="https://en.wikipedia.org/wiki/Walsham_baronets" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Walsham_baronets</a>
         </li>
-        <li id="ref-5">
+        <li>
           Cracroft's Peerage. "Abinger, Baron (UK, 1835)".
           <a href="http://www.cracroftspeerage.co.uk/abinger1835.htm" target="_blank" rel="noopener noreferrer">http://www.cracroftspeerage.co.uk/abinger1835.htm</a>
         </li>
-        <li id="ref-6">
+        <li>
           "Baron Abinger." <em>Wikipedia</em>.
           <a href="https://en.wikipedia.org/wiki/Baron_Abinger" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Baron_Abinger</a>
         </li>
       </ol>
     </section>
 
-    <section id="image-index">
-      <h2>Image Index</h2>
-      
-      <p>
-        The following images are used on this page to illustrate the Scottish arms and the principal armorial traditions that
-        informed their design.
-      </p>
-
-      <div class="thumbnail-grid">
-        <figure class="thumbnail-item">
-          <img src="Full_Arms.png" alt="Full arms of Mark Richard Hopking" />
-          <figcaption>Full achievement</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Shield.png" alt="Shield of Mark Richard Hopking" />
-          <figcaption>Shield</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Hopkin.jpg" alt="Hopkin arms" />
-          <figcaption>Hopkin arms</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="80 Walsham 2nd Baronet of Knill Court.jpg" alt="Walsham arms" />
-          <figcaption>Walsham arms</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="79 Scarlett 1st Baron Abinger.png" alt="Scarlett arms" />
-          <figcaption>Scarlett arms</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Fortin.png" alt="Fortin arms" />
-          <figcaption>Fortin arms</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Chivers.png" alt="Chivers arms" />
-          <figcaption>Chivers arms</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Old family crest.png" alt="Old family crest" />
-          <figcaption>Traditional crest</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Crest.png" alt="Granted crest" />
-          <figcaption>Granted crest</figcaption>
-        </figure>
-
-        <figure class="thumbnail-item">
-          <img src="Motto.png" alt="Motto scroll" />
-          <figcaption>Motto scroll</figcaption>
-        </figure>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="site-footer">
-    <p>
-      © <span id="copyright-year"></span>
-      <a href="https://markhopking.co.uk/">markhopking.co.uk</a>.
-      All rights reserved.
-    </p>
-    <p>
-      Content is presented in a neutral, third-party style with citations distinguishing
-      published sources from privately held records.
-    </p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Sections</h3>
+          <ul class="footer-links">
+            <li><a href="https://marine.markhopking.co.uk/">Maritime Career</a></li>
+            <li><a href="https://barony.markhopking.co.uk/">Barony of Balvill</a></li>
+            <li><a href="https://heraldry.markhopking.co.uk/">Heraldry</a></li>
+            <li><a href="https://genealogy.markhopking.co.uk/">Genealogy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/markhopking/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/markhopking" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/markhopking/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://x.com/markhopking" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="https://debretts.com/directories/other-titles-2/the-feudal-baronies-of-scotland/" target="_blank" rel="noopener noreferrer">Debrett's Baronies</a></li>
+            <li><a href="https://roll.baronage.com/baron/mark-hopking" target="_blank" rel="noopener noreferrer">Baronage Roll</a></li>
+            <li><a href="https://lordlyonsociety.org.uk/" target="_blank" rel="noopener noreferrer">Lord Lyon Society</a></li>
+            <li><a href="https://genealogy.markhopking.co.uk/" target="_blank" rel="noopener noreferrer">Genealogy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="copyright-year"></span> Mark Hopking. All rights reserved.</p>
+        <p>Content presented in a neutral, third-party style with citations distinguishing published sources from privately held records.</p>
+      </div>
+    </div>
   </footer>
 
   <script>
-    document.getElementById("copyright-year").textContent = new Date().getFullYear();
-  </script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
 
+    // Update copyright year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const nav = document.querySelector('.site-nav');
+      const navLinks = document.getElementById('navLinks');
+      
+      if (!nav.contains(event.target)) {
+        navLinks.classList.remove('active');
+      }
+    });
+
+    // Close mobile menu when link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('navLinks').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
